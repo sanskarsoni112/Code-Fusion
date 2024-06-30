@@ -1,0 +1,14 @@
+file_path = '/mnt/data/windows.txt'
+metadata = {
+    'Tag': 'CCBST Student',
+    'Author': 'ChatGPT',
+    'Title': 'windows',
+    'Comments': 'Completed'
+}
+
+# Writing the metadata to the file
+with open(file_path, 'w') as file:
+    for key, value in metadata.items():
+        file.write(f"{key}: {value}\n")
+
+file_path
